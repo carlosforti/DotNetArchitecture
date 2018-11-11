@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.1.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.1.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\Core\Logging\Solution.Core.Logging.csproj" />
+        <ProjectReference Include="..\..\Core\Security\Solution.Core.Security.csproj" />
+        <ProjectReference Include="..\Application\Solution.App.Application.csproj" />
+        <ProjectReference Include="..\Database\Solution.App.Database.csproj" />
+        <ProjectReference Include="..\Domain\Solution.App.Domain.csproj" />
+    </ItemGroup>
+</Project>
